@@ -42,10 +42,10 @@ def main():
     while True:
         command = listen_command()
 
-        triggerKeyword = "max"
+        triggerName = "max"
 
         
-        if command and triggerKeyword in command:
+        if command and triggerName in command:
             if listeningToTask:
                 tasks.append(command)
                 listeningToTask = False
